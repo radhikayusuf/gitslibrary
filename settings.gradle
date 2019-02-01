@@ -1,0 +1,1 @@
+include ':app', ':gitsimageview', ':gitstextview', ':gitscalendarview', ':gitsvalidatorview', ':gitsnotificationmanager'
