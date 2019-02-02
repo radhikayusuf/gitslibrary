@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dimen_8dp">
+
+            <include
+                    android:id="@+id/titleLayout"
+                    layout="@layout/custom_calendar_title_layout"/>
+
+            <include
+                    android:id="@+id/weekLayout"
+                    layout="@layout/custom_calendar_weeks_layout"/>
+
+            <LinearLayout
+                    android:id="@+id/daysContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:orientation="vertical">
+
+                <include layout="@layout/roboto_calendar_week_1"/>
+
+                <include layout="@layout/roboto_calendar_week_2"/>
+
+                <include layout="@layout/roboto_calendar_week_3"/>
+
+                <include layout="@layout/roboto_calendar_week_4"/>
+
+                <include layout="@layout/roboto_calendar_week_5"/>
+
+                <include layout="@layout/roboto_calendar_week_6"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+                android:id="@+id/loadingView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:clickable="false"
+                android:focusable="false"
+                android:background="#5cffffff">
+
+            <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+        </FrameLayout>
+    </FrameLayout>
+</android.support.v7.widget.CardView>

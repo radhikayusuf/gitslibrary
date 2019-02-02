@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeHeader"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:clickable="true"
+    android:paddingBottom="@dimen/calendarTitlePaddingBottom"
+    android:paddingTop="@dimen/calendarTitlePaddingTop">
+
+    <ImageView
+        android:id="@+id/leftButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="false"
+        android:layout_centerVertical="true"
+        android:paddingEnd="@dimen/dimen_8dp"
+        android:paddingStart="@dimen/dimen_8dp"
+        android:focusable="true"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:src="@drawable/ic_chevron_left_24dp" />
+
+    <TextView
+        android:id="@+id/dateTitle"
+        style="@style/CalendarView.MonthTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_centerInParent="true"
+        android:tag="dateTitle"
+        android:text="MONTH 2014"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary" />
+
+    <ImageView
+        android:id="@+id/rightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="false"
+        android:layout_centerVertical="true"
+        android:paddingEnd="@dimen/dimen_8dp"
+        android:paddingStart="@dimen/dimen_8dp"
+        android:focusable="true"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:src="@drawable/ic_chevron_right_24dp" />
+</RelativeLayout><!-- From: file:/build/library/res/layout/custom_calendar_title_layout.xml -->

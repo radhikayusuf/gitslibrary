@@ -16,158 +16,210 @@
                 android:orientation="vertical"
                 android:padding="16dp">
 
-            <LinearLayout
+            <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
-                    android:orientation="vertical">
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="@dimen/dimen_16dp">
 
-                <TextView
+                <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textStyle="bold"
-                        android:textSize="16sp"
-                        android:text="GitsImageView"
-                        android:layout_marginBottom="16dp"/>
+                        android:layout_marginBottom="16dp"
+                        android:orientation="vertical">
 
-                <id.gits.gitsimageview.view.GitsImageView
-                        android:layout_width="200dp"
-                        android:layout_height="200dp"
-                        android:layout_gravity="center"
-                        app:placeholder="@mipmap/ic_launcher"
-                        android:background="@color/colorPrimary"
-                        app:scaleType="centerCrop"
-                        app:imageUrl="@{`http://www.liverpoolmuseums.org.uk/ladylever/exhibitions/picasso/still-life-under-the-lamp.jpg`}"/>
-            </LinearLayout>
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:text="GitsImageView"
+                            android:layout_marginBottom="16dp"/>
 
-            <LinearLayout
+                    <id.gits.gitsdesigncomponent.view.GitsImageView
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            app:placeholder="@mipmap/ic_launcher"
+                            android:background="@color/colorPrimary"
+                            app:scaleType="centerCrop"
+                            app:imageUrl="@{`http://www.liverpoolmuseums.org.uk/ladylever/exhibitions/picasso/still-life-under-the-lamp.jpg`}"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
-                    android:orientation="vertical">
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="@dimen/dimen_16dp">
 
-                <TextView
+                <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textStyle="bold"
-                        android:textSize="16sp"
-                        android:text="GitsNotification"
-                        android:layout_marginBottom="16dp"/>
+                        android:layout_marginBottom="16dp"
+                        android:orientation="vertical">
 
-                <EditText
-                        android:id="@+id/etTitle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:imeOptions="actionNext"
-                        android:inputType="text"
-                        android:maxLines="1"/>
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:text="GitsNotification"
+                            android:layout_marginBottom="16dp"/>
 
-                <EditText
-                        android:id="@+id/etMessage"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:imeOptions="actionDone"
-                        android:inputType="text"
-                        android:maxLines="1"/>
+                    <EditText
+                            android:id="@+id/etTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:maxLines="1"/>
 
-                <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textSize="16sp"
-                        android:text="Target"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginBottom="8dp"/>
+                    <EditText
+                            android:id="@+id/etMessage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:imeOptions="actionDone"
+                            android:inputType="text"
+                            android:maxLines="1"/>
 
-                <RadioGroup
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:text="Target"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"/>
 
-                    <RadioButton
-                            android:id="@+id/radioA"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:text="A"
-                            android:checked="true"
+                    <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <RadioButton
+                                android:id="@+id/radioA"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="A"
+                                android:checked="true"
+                                android:layout_height="wrap_content"/>
+
+                        <RadioButton
+                                android:id="@+id/radioB"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="B"
+                                android:layout_height="wrap_content"/>
+
+                    </RadioGroup>
+
+                    <CheckBox
+                            android:id="@+id/checkboxmain"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Open HomePage ? "/>
+
+                    <Button
+                            android:id="@+id/buttonTestNotif"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="right"
+                            android:text="ADD NOTIF"
                             android:layout_height="wrap_content"/>
 
-                    <RadioButton
-                            android:id="@+id/radioB"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:text="B"
-                            android:layout_height="wrap_content"/>
 
-                </RadioGroup>
+                </LinearLayout>
 
-                <CheckBox
-                        android:id="@+id/checkboxmain"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Open HomePage ? "/>
-
-                <Button
-                        android:id="@+id/buttonTestNotif"
-                        android:layout_width="wrap_content"
-                        android:layout_gravity="right"
-                        android:text="ADD NOTIF"
-                        android:layout_height="wrap_content"/>
+            </android.support.v7.widget.CardView>
 
 
-            </LinearLayout>
-
-            <LinearLayout
+            <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
-                    android:orientation="vertical">
-
-                <TextView
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="@dimen/dimen_16dp">
+                <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textStyle="bold"
-                        android:textSize="16sp"
-                        android:text="GitsTextView"
-                        android:layout_marginBottom="16dp"/>
+                        android:layout_marginBottom="16dp"
+                        android:orientation="vertical">
 
-                <id.gits.gitstextview.view.GitsTextView
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:text="GitsTextView"
+                            android:layout_marginBottom="16dp"/>
+
+                    <id.gits.gitsdesigncomponent.view.GitsTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:text="LATO"
+                            app:fontFace="lato"
+                            app:fontTextStyle="thin_italic"
+                            android:layout_marginTop="8dp"/>
+
+                    <id.gits.gitsdesigncomponent.view.GitsTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:text="AVENIR"
+                            app:fontFace="avenir"
+                            app:fontTextStyle="thin_italic"
+                            android:layout_marginTop="8dp"/>
+
+                    <id.gits.gitsdesigncomponent.view.GitsTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:text="MONTSERRAT"
+                            app:fontFace="montserrat"
+                            app:fontTextStyle="thin_italic"
+                            android:layout_marginTop="8dp"/>
+
+                    <id.gits.gitsdesigncomponent.view.GitsTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:text="ROBOTO"
+                            app:fontFace="roboto"
+                            app:fontTextStyle="thin_italic"
+                            android:layout_marginTop="8dp"/>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="@dimen/dimen_16dp">
+                <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="16sp"
-                        android:text="LATO"
-                        app:fontFace="lato"
-                        app:fontTextStyle="thin_italic"
-                        android:layout_marginTop="8dp"/>
+                        android:layout_marginBottom="16dp"
+                        android:orientation="vertical">
 
-                <id.gits.gitstextview.view.GitsTextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textSize="16sp"
-                        android:text="AVENIR"
-                        app:fontFace="avenir"
-                        app:fontTextStyle="thin_italic"
-                        android:layout_marginTop="8dp"/>
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:text="GitsCalendarView"
+                            android:layout_marginBottom="16dp"/>
 
-                <id.gits.gitstextview.view.GitsTextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textSize="16sp"
-                        android:text="MONTSERRAT"
-                        app:fontFace="montserrat"
-                        app:fontTextStyle="thin_italic"
-                        android:layout_marginTop="8dp"/>
+                    <id.gits.gitsdesigncomponent.view.gitscalendarview.GitsCalendarView
+                            android:id="@+id/calendarView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
 
-                <id.gits.gitstextview.view.GitsTextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textSize="16sp"
-                        android:text="ROBOTO"
-                        app:fontFace="roboto"
-                        app:fontTextStyle="thin_italic"
-                        android:layout_marginTop="8dp"/>
-
-
-            </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
 
 
         </LinearLayout>

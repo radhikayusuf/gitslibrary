@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:tag="weekRow5"
+    android:weightSum="7">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:tag="frame29">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_28dp"
+            android:layout_height="@dimen/dimen_28dp"
+            android:layout_gravity="center_horizontal"
+            android:tag="imageMyCalendar29"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:tag="dayOfMonthContainer29">
+
+            <id.gits.gitsdesigncomponent.view.gitscalendarview.GitsDayView
+                style="@style/CalendarView.DayOfTheMonth"
+                android:layout_width="@dimen/dimen_28dp"
+                android:layout_height="@dimen/dimen_28dp"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:tag="dayOfMonthText29"
+                android:text="29"
+                android:textColor="@color/colorRed" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:tag="viewgroupinfo29">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_checkin"
+                    android:gravity="center_horizontal"
+                    android:paddingEnd="@dimen/dimen_4dp"
+                    android:paddingStart="@dimen/dimen_4dp"
+                    android:tag="progressTextTag29"
+                    android:text="2.3 H"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+
+                <ImageView
+                        android:layout_width="@dimen/dimen_8dp"
+                        android:layout_height="@dimen/dimen_8dp"
+                        android:tag="imageDotTag29"
+                        android:src="@drawable/red_circle"
+                        android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_checkout"
+                    android:gravity="center_horizontal"
+                    android:paddingEnd="@dimen/dimen_4dp"
+                    android:paddingStart="@dimen/dimen_4dp"
+                    android:tag="approvedTextTag29"
+                    android:text="2.3 H"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:tag="frame30">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_28dp"
+            android:layout_height="@dimen/dimen_28dp"
+            android:layout_gravity="center_horizontal"
+            android:tag="imageMyCalendar30"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:tag="dayOfMonthContainer30">
+
+
+            <id.gits.gitsdesigncomponent.view.gitscalendarview.GitsDayView
+                style="@style/CalendarView.DayOfTheMonth"
+                android:layout_width="@dimen/dimen_28dp"
+                android:layout_height="@dimen/dimen_28dp"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:tag="dayOfMonthText30"
+                android:text="30" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:tag="viewgroupinfo30">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_checkin"
+                    android:gravity="center_horizontal"
+                    android:paddingEnd="@dimen/dimen_4dp"
+                    android:paddingStart="@dimen/dimen_4dp"
+                    android:tag="progressTextTag30"
+                    android:text="2.3 H"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+
+                <ImageView
+                        android:layout_width="@dimen/dimen_8dp"
+                        android:layout_height="@dimen/dimen_8dp"
+                        android:tag="imageDotTag30"
+                        android:src="@drawable/red_circle"
+                        android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_checkout"
+                    android:gravity="center_horizontal"
+                    android:paddingEnd="@dimen/dimen_4dp"
+                    android:paddingStart="@dimen/dimen_4dp"
+                    android:tag="approvedTextTag30"
+                    android:text="2.3 H"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:tag="frame31">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_28dp"
+            android:layout_height="@dimen/dimen_28dp"
+            android:layout_gravity="center_horizontal"
+            android:tag="imageMyCalendar31"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:tag="dayOfMonthContainer31">
+
+
+            <id.gits.gitsdesigncomponent.view.gitscalendarview.GitsDayView
+                style="@style/CalendarView.DayOfTheMonth"
+                android:layout_width="@dimen/dimen_28dp"
+                android:layout_height="@dimen/dimen_28dp"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:tag="dayOfMonthText31"
+                android:text="31" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:tag="viewgroupinfo31">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_checkin"
+                    android:gravity="center_horizontal"
+                    android:paddingEnd="@dimen/dimen_4dp"
+                    android:paddingStart="@dimen/dimen_4dp"
+                    android:tag="progressTextTag31"
+                    android:text="2.3 H"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+
+                <ImageView
+                        android:layout_width="@dimen/dimen_8dp"
+                        android:layout_height="@dimen/dimen_8dp"
+                        android:tag="imageDotTag31"
+                        android:src="@drawable/red_circle"
+                        android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_checkout"
+                    android:gravity="center_horizontal"
+                    android:paddingEnd="@dimen/dimen_4dp"
+                    android:paddingStart="@dimen/dimen_4dp"
+                    android:tag="approvedTextTag31"
+                    android:text="2.3 H"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:tag="frame32">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_28dp"
+            android:layout_height="@dimen/dimen_28dp"
+            android:layout_gravity="center_horizontal"
+            android:tag="imageMyCalendar32"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:tag="dayOfMonthContainer32">
+
+
+            <id.gits.gitsdesigncomponent.view.gitscalendarview.GitsDayView
+                style="@style/CalendarView.DayOfTheMonth"
+                android:layout_width="@dimen/dimen_28dp"
+                android:layout_height="@dimen/dimen_28dp"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:tag="dayOfMonthText32"
+                android:text="32" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:tag="viewgroupinfo32">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_checkin"
+                    android:gravity="center_horizontal"
+                    android:paddingEnd="@dimen/dimen_4dp"
+                    android:paddingStart="@dimen/dimen_4dp"
+                    android:tag="progressTextTag32"
+                    android:text="2.3 H"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+
+                <ImageView
+                        android:layout_width="@dimen/dimen_8dp"
+                        android:layout_height="@dimen/dimen_8dp"
+                        android:tag="imageDotTag32"
+                        android:src="@drawable/red_circle"
+                        android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_checkout"
+                    android:gravity="center_horizontal"
+                    android:paddingEnd="@dimen/dimen_4dp"
+                    android:paddingStart="@dimen/dimen_4dp"
+                    android:tag="approvedTextTag32"
+                    android:text="2.3 H"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:tag="frame33">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_28dp"
+            android:layout_height="@dimen/dimen_28dp"
+            android:layout_gravity="center_horizontal"
+            android:tag="imageMyCalendar33"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:tag="dayOfMonthContainer33">
+
+            <id.gits.gitsdesigncomponent.view.gitscalendarview.GitsDayView
+                style="@style/CalendarView.DayOfTheMonth"
+                android:layout_width="@dimen/dimen_28dp"
+                android:layout_height="@dimen/dimen_28dp"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:tag="dayOfMonthText33"
+                android:text="33" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:tag="viewgroupinfo33">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_checkin"
+                    android:gravity="center_horizontal"
+                    android:paddingEnd="@dimen/dimen_4dp"
+                    android:paddingStart="@dimen/dimen_4dp"
+                    android:tag="progressTextTag33"
+                    android:text="2.3 H"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+
+                <ImageView
+                        android:layout_width="@dimen/dimen_8dp"
+                        android:layout_height="@dimen/dimen_8dp"
+                        android:tag="imageDotTag33"
+                        android:src="@drawable/red_circle"
+                        android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_checkout"
+                    android:gravity="center_horizontal"
+                    android:paddingEnd="@dimen/dimen_4dp"
+                    android:paddingStart="@dimen/dimen_4dp"
+                    android:tag="approvedTextTag33"
+                    android:text="2.3 H"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:tag="frame34">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_28dp"
+            android:layout_height="@dimen/dimen_28dp"
+            android:layout_gravity="center_horizontal"
+            android:tag="imageMyCalendar34"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:tag="dayOfMonthContainer34">
+
+            <id.gits.gitsdesigncomponent.view.gitscalendarview.GitsDayView
+                style="@style/CalendarView.DayOfTheMonth"
+                android:layout_width="@dimen/dimen_28dp"
+                android:layout_height="@dimen/dimen_28dp"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:tag="dayOfMonthText34"
+                android:text="34" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:tag="viewgroupinfo34">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_checkin"
+                    android:gravity="center_horizontal"
+                    android:paddingEnd="@dimen/dimen_4dp"
+                    android:paddingStart="@dimen/dimen_4dp"
+                    android:tag="progressTextTag34"
+                    android:text="2.3 H"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+
+                <ImageView
+                        android:layout_width="@dimen/dimen_8dp"
+                        android:layout_height="@dimen/dimen_8dp"
+                        android:tag="imageDotTag34"
+                        android:src="@drawable/red_circle"
+                        android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_checkout"
+                    android:gravity="center_horizontal"
+                    android:paddingEnd="@dimen/dimen_4dp"
+                    android:paddingStart="@dimen/dimen_4dp"
+                    android:tag="approvedTextTag34"
+                    android:text="2.3 H"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:tag="frame35">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_28dp"
+            android:layout_height="@dimen/dimen_28dp"
+            android:layout_gravity="center_horizontal"
+            android:tag="imageMyCalendar35"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:tag="dayOfMonthContainer35">
+
+            <id.gits.gitsdesigncomponent.view.gitscalendarview.GitsDayView
+                style="@style/CalendarView.DayOfTheMonth"
+                android:layout_width="@dimen/dimen_28dp"
+                android:layout_height="@dimen/dimen_28dp"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:tag="dayOfMonthText35"
+                android:text="35" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:tag="viewgroupinfo35">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_checkin"
+                    android:gravity="center_horizontal"
+                    android:paddingEnd="@dimen/dimen_4dp"
+                    android:paddingStart="@dimen/dimen_4dp"
+                    android:tag="progressTextTag35"
+                    android:text="2.3 H"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+
+                <ImageView
+                        android:layout_width="@dimen/dimen_8dp"
+                        android:layout_height="@dimen/dimen_8dp"
+                        android:tag="imageDotTag35"
+                        android:src="@drawable/red_circle"
+                        android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_checkout"
+                    android:gravity="center_horizontal"
+                    android:paddingEnd="@dimen/dimen_4dp"
+                    android:paddingStart="@dimen/dimen_4dp"
+                    android:tag="approvedTextTag35"
+                    android:text="2.3 H"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout><!-- From: file:/build/library/res/layout/roboto_calendar_week_5.xml -->

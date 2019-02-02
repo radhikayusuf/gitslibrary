@@ -14,7 +14,8 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".presentation.DemoActivity">
+        <activity android:name=".presentation.DemoActivity"
+                  android:windowSoftInputMode="stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -23,19 +24,19 @@
         </activity>
         <activity android:name=".presentation.TargetANotifActivity">
             <intent-filter>
-                <action android:name="targetANotifActivityAction" />
+                <action android:name="targetANotifActivityAction"/>
 
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
         <activity android:name=".presentation.TargetBNotifActivity">
             <intent-filter>
-                <action android:name="targetBNotifActivityAction" />
+                <action android:name="targetBNotifActivityAction"/>
 
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <receiver android:name="id.gits.gitsnotificationmanager.notificationhelper.NotificationBroadcastReceiver"/>
+        <receiver android:name="id.gits.gitsdesigncomponent.notificationhelper.NotificationBroadcastReceiver"/>
     </application>
 
 </manifest>

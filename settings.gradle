@@ -1,1 +1,1 @@
-include ':app', ':gitsimageview', ':gitstextview', ':gitscalendarview', ':gitsvalidatorview', ':gitsnotificationmanager'
+include ':app', ':gitsimageview', ':gitstextview', ':gitscalendarview', ':gitsvalidatorview', ':gitsnotificationmanager', ':gitsdesigncomponent'
