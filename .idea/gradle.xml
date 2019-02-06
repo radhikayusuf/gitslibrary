@@ -9,12 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/gitscalendarview" />
             <option value="$PROJECT_DIR$/gitsdesigncomponent" />
-            <option value="$PROJECT_DIR$/gitsimageview" />
-            <option value="$PROJECT_DIR$/gitsnotificationmanager" />
-            <option value="$PROJECT_DIR$/gitstextview" />
-            <option value="$PROJECT_DIR$/gitsvalidatorview" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
