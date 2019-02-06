@@ -15,7 +15,10 @@ import android.support.v4.app.NotificationManagerCompat
  * Class ini dipakai untuk membuat notification
  * untuk beberapa setting notification bisa di lihat di GitsNotificationApplication
  */
-class GitsNotificationManager(private val context: Context, @DrawableRes val icon: Int, private val summaryText: String) {
+class GitsNotificationManager(
+    private val context: Context, @DrawableRes val icon: Int,
+    private val summaryText: String
+) {
 
     private val notificationManager: NotificationManagerCompat = NotificationManagerCompat.from(context)
 
@@ -37,7 +40,9 @@ class GitsNotificationManager(private val context: Context, @DrawableRes val ico
             0,
             if (mData.isBackToHome) arrayOf(
                 homeIntent,
-                Intent(mData.targetIntentAction)
+                Intent(mData.targetIntentAction).apply {
+                    putExtras(mData.data)
+                }
             ) else arrayOf(Intent(mData.targetIntentAction)),
             PendingIntent.FLAG_UPDATE_CURRENT
         )
@@ -91,7 +96,10 @@ class GitsNotificationManager(private val context: Context, @DrawableRes val ico
                     Intent(model.targetIntentAction).apply { putExtra(NOTIF_ID_KEY, model.id) }) else arrayOf(
                     Intent(
                         model.targetIntentAction
-                    ).apply { putExtra(NOTIF_ID_KEY, model.id) }),
+                    ).apply {
+                        putExtra(NOTIF_ID_KEY, model.id)
+                        putExtras(model.data)
+                    }),
                 PendingIntent.FLAG_UPDATE_CURRENT
             )
             val intent = Intent(context, NotificationBroadcastReceiver::class.java).apply {

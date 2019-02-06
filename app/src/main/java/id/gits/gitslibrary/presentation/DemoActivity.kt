@@ -27,6 +27,7 @@ class DemoActivity : AppCompatActivity() {
         initComponent()
     }
 
+
     private fun initComponent() {
         gitsNotificationManager = GitsNotificationManager(this@DemoActivity,
             R.drawable.ic_launcher_foreground, "radhika@gits.co.id")
@@ -39,8 +40,6 @@ class DemoActivity : AppCompatActivity() {
             gitsNotificationManager.addNotificationToGroup(data, Intent(this@DemoActivity, DemoActivity::class.java))
 
         }
-
-
         mViewBinding.calendarView.apply {
             initializeCalendar(object : GitsCalendarUserActionListener{
                 override fun onClickNextMonth(month: Int, year: Int) {
@@ -90,6 +89,16 @@ class DemoActivity : AppCompatActivity() {
 
             list.sortBy { it.date }
             setData(list, true)
+        }
+
+
+        mViewBinding.validatorView.initialComponent()
+
+        mViewBinding.buttonValidation.setOnClickListener {
+            val validateAllValue = mViewBinding.validatorView.validateAllValue()
+            if (validateAllValue.isResult) {
+
+            }
         }
     }
 

@@ -131,6 +131,7 @@
 
                 </LinearLayout>
 
+
             </android.support.v7.widget.CardView>
 
 
@@ -217,6 +218,57 @@
                             android:id="@+id/calendarView"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="@dimen/dimen_16dp">
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:text="GitsValidatorLayout"
+                            android:layout_marginBottom="16dp"/>
+
+                    <id.gits.gitsdesigncomponent.view.gitsvalidatorlayout.GitsValidatorLayout
+                            android:id="@+id/validatorView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                            <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="textEmailAddress"
+                                    android:tag="validationEmptyOrNull|title"
+                                    android:maxLines="1"/>
+
+                            <Button
+                                    android:id="@+id/buttonValidation"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+
+                    </id.gits.gitsdesigncomponent.view.gitsvalidatorlayout.GitsValidatorLayout>
 
                 </LinearLayout>
             </android.support.v7.widget.CardView>

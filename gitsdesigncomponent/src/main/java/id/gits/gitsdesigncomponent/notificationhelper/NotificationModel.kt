@@ -2,6 +2,7 @@ package id.gits.gitsdesigncomponent.notificationhelper
 
 import android.media.RingtoneManager
 import android.net.Uri
+import android.os.Bundle
 
 
 data class NotificationModel(
@@ -11,5 +12,6 @@ data class NotificationModel(
     val icon: Int, /* icon of the notification*/
     val isBackToHome: Boolean, /* If true, when user close targetIntent, application will open home activity */
     val targetIntentAction: String, /* Target page when click notification */
-    val sound: Uri? = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION) /* Notification sound */
+    val sound: Uri? = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION), /* Notification sound */
+    val data: Bundle = Bundle() /* data for intent */
 )
